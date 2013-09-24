@@ -315,7 +315,9 @@
       container.style.height = "15px";
       container.style.zIndex = "9999";
       container.innerHTML = html;
-      document.body.appendChild(container);
+      var image = document.getElementById("img_cont");
+      image.appendChild(container);
+      //document.body.appendChild(container);
     }
     client.htmlBridge = container;
     client.flashBridge = document["global-zeroclipboard-flash-bridge"] || container.children[0].lastElementChild;
